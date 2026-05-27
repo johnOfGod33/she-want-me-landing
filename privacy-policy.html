@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — She Want Me</title>
+  <meta name="description" content="Politique de confidentialité de l'application She Want Me, chat vidéo aléatoire pour la diaspora africaine.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg:      '#0E0E10',
+            accent:  '#FF3D5C',
+            surface: '#1A1A1E',
+          },
+          fontFamily: {
+            sans:     ['Inter', 'sans-serif'],
+            display:  ['Space Grotesk', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0E0E10;
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glow-accent { box-shadow: 0 8px 40px rgba(255,61,92,0.35); }
+
+    .prose-body { color: rgba(255,255,255,0.72); }
+    .prose-body p { margin-bottom: 1rem; }
+    .prose-body strong { color: rgba(255,255,255,0.92); font-weight: 600; }
+
+    .policy-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+    .policy-table th {
+      background: rgba(255,255,255,0.03);
+      color: rgba(255,255,255,0.4);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .policy-table td {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.68);
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    .policy-table tr:last-child td { border-bottom: none; }
+    .policy-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .policy-table td strong { color: rgba(255,255,255,0.88); font-weight: 500; }
+
+    [id] { scroll-margin-top: 90px; }
+
+    .section-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #FF3D5C;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body class="font-sans text-white min-h-screen">
+
+  <!-- Nav -->
+  <nav class="flex items-center justify-between px-6 py-5 max-w-5xl mx-auto sticky top-0 z-10 backdrop-blur-md border-b border-white/5" style="background: rgba(14,14,16,0.9);">
+    <a href="/" class="flex items-center gap-1.5 font-display">
+      <span class="font-bold text-lg">she</span>
+      <span class="w-2 h-2 rounded-full bg-accent"></span>
+      <span class="font-bold text-lg">want me</span>
+    </a>
+    <a href="https://chat.whatsapp.com/IQzRdAsaIaI4a5UtiWPQNz?mode=gi_t"
+       target="_blank"
+       class="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:opacity-90 transition glow-accent">
+      Rejoindre la bêta
+    </a>
+  </nav>
+
+  <!-- Page header -->
+  <div class="max-w-5xl mx-auto px-6 pt-14 pb-12 border-b border-white/5">
+    <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-4 font-display">Légal</p>
+    <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight mb-5">Politique de<br>Confidentialité</h1>
+    <div class="flex flex-wrap gap-x-6 gap-y-2 text-[0.9rem] text-white/40">
+      <span>Version 1.0</span>
+      <span class="text-white/15">·</span>
+      <span>En vigueur depuis le 27 mai 2025</span>
+      <span class="text-white/15">·</span>
+      <span>Dernière mise à jour : 27 mai 2026</span>
+    </div>
+  </div>
+
+  <!-- Layout -->
+  <div class="max-w-5xl mx-auto px-6 py-14 flex flex-col lg:flex-row gap-12">
+
+    <!-- Sidebar TOC -->
+    <aside class="hidden lg:block w-56 shrink-0">
+      <div class="sticky top-28">
+        <p class="text-xs font-semibold text-white/30 uppercase tracking-widest mb-5 font-display">Sommaire</p>
+        <nav class="space-y-1">
+          <a href="#section-1"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Qui sommes-nous ?</a>
+          <a href="#section-2"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Données collectées</a>
+          <a href="#section-3"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Utilisation des données</a>
+          <a href="#section-4"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Partage des données</a>
+          <a href="#section-5"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Transferts internationaux</a>
+          <a href="#section-6"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Durée de conservation</a>
+          <a href="#section-7"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Vos droits</a>
+          <a href="#section-8"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Sécurité des données</a>
+          <a href="#section-9"  class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Enfants et mineurs</a>
+          <a href="#section-10" class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Cookies et suivi</a>
+          <a href="#section-11" class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Modifications</a>
+          <a href="#section-12" class="block text-[0.875rem] text-white/50 hover:text-white py-1.5 transition leading-snug">Nous contacter</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 min-w-0">
+
+      <!-- Quick summary -->
+      <div class="mb-14 rounded-2xl border border-white/8 overflow-hidden">
+        <div class="px-6 py-4 border-b border-white/8" style="background: rgba(255,61,92,0.06);">
+          <p class="font-display font-bold text-base text-white/90">Résumé rapide</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="policy-table">
+            <tbody>
+              <tr><td class="w-48"><strong>Application</strong></td><td>She Want Me, chat vidéo aléatoire 1:1</td></tr>
+              <tr><td><strong>Responsable</strong></td><td>Jean de Dieu SESSOU (auto-entrepreneur)</td></tr>
+              <tr><td><strong>Contact</strong></td><td><a href="mailto:sessoujeandedieu@gmail.com" class="text-accent hover:underline">sessoujeandedieu@gmail.com</a></td></tr>
+              <tr><td><strong>Données collectées</strong></td><td>Pseudo, genre, pays, bio, photo de profil, identifiant anonyme</td></tr>
+              <tr><td><strong>Données collectées (à venir)</strong></td><td>Email, nom Google/Apple (si connexion via compte, optionnel, phase 2)</td></tr>
+              <tr><td><strong>Non collectées</strong></td><td>Téléphone, localisation GPS, données bancaires</td></tr>
+              <tr><td><strong>Appels vidéo</strong></td><td>Transmis en direct via Agora.io, non enregistrés</td></tr>
+              <tr><td><strong>Âge minimum</strong></td><td>18 ans</td></tr>
+              <tr><td><strong>Marchés</strong></td><td>Afrique de l'Ouest (UEMOA)</td></tr>
+              <tr><td><strong>Rétention</strong></td><td>Jusqu'à suppression du compte ou désinstallation</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sections -->
+      <div class="space-y-16">
+
+        <!-- 1 -->
+        <section id="section-1">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">01</span>
+            <h2 class="font-display text-2xl font-bold">Qui sommes-nous ?</h2>
+          </div>
+          <div class="prose-body">
+            <p>She Want Me est une application mobile de chat vidéo aléatoire 1:1 destinée à la diaspora ouest-africaine. Elle permet à des utilisateurs de se connecter de façon spontanée et anonyme, sans créer de compte traditionnel.</p>
+          </div>
+          <div class="mt-5 rounded-xl border border-white/8 p-5 bg-surface text-[0.9375rem]">
+            <p class="text-white font-semibold mb-3">Responsable de traitement des données</p>
+            <div class="space-y-1 text-white/60">
+              <p>Jean de Dieu SESSOU, auto-entrepreneur</p>
+              <p>17 rue Kouenou, Lomé, Togo</p>
+              <p>Email : <a href="mailto:sessoujeandedieu@gmail.com" class="text-accent hover:underline">sessoujeandedieu@gmail.com</a></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 -->
+        <section id="section-2">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">02</span>
+            <h2 class="font-display text-2xl font-bold">Données que nous collectons</h2>
+          </div>
+
+          <div class="space-y-10">
+            <div>
+              <h3 class="font-semibold text-white text-lg mb-4">Données fournies par l'utilisateur</h3>
+              <div class="prose-body mb-4">
+                <p>Lors de la création de votre profil, vous fournissez volontairement :</p>
+              </div>
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Pseudo :</strong> maximum 20 caractères. Aucun nom réel n'est requis.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Genre :</strong> femme ou homme, utilisé pour les préférences de matching.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Pays :</strong> sélectionné dans une liste, pas une localisation GPS précise.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Bio</strong> <span class="text-white/40">(optionnel) :</span> texte libre, maximum 160 caractères.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Photo de profil</strong> <span class="text-white/40">(optionnel) :</span> image uploadée depuis votre appareil.</span>
+                </li>
+              </ul>
+              <div class="mt-6 rounded-xl border border-accent/20 bg-accent/5 px-5 py-4 text-[0.9375rem] text-white/72 leading-relaxed">
+                Nous ne collectons <strong class="text-white font-semibold">jamais</strong> votre email, numéro de téléphone, nom réel, adresse, ou données bancaires.
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-white text-lg mb-4">Données générées automatiquement</h3>
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Identifiant anonyme (UID) :</strong> généré par Firebase Authentication, non lié à votre identité réelle.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Données de présence :</strong> signal de connexion/déconnexion (timestamp), sans adresse IP ni localisation.</span>
+                </li>
+              </ul>
+              <div class="mt-5 rounded-xl border border-white/10 bg-surface px-5 py-4 text-[0.9375rem] text-white/60 leading-relaxed">
+                <p class="text-white/40 text-xs font-semibold uppercase tracking-widest mb-2">Évolution prévue : Phase 2</p>
+                She Want Me prévoit d'introduire une option de connexion via email/mot de passe, Google Sign-In et Apple Sign-In. Si vous choisissez de lier votre compte à l'une de ces méthodes, des données supplémentaires seront collectées : adresse email, et le cas échéant, votre nom de compte Google ou Apple. Cette connexion restera <strong class="text-white/80">optionnelle</strong> ; l'authentification anonyme continuera d'être proposée. Cette politique sera mise à jour avant l'activation de cette fonctionnalité.
+              </div>
+              <ul class="space-y-3 mt-4">
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Données de session :</strong> identifiant de session, UIDs des deux participants, nom du canal Agora et statut de la session.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Compteur de recherches :</strong> compteur journalier stocké uniquement sur votre appareil.</span>
+                </li>
+                <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                  <span><strong class="text-white/90 font-medium">Confirmation d'âge :</strong> marqueur local indiquant que vous avez confirmé avoir 18 ans ou plus.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-white text-lg mb-5">Données collectées par nos prestataires</h3>
+              <div class="space-y-3">
+                <div class="rounded-xl border border-white/8 p-5 bg-surface">
+                  <p class="font-semibold text-white/90 mb-2">Firebase (Google LLC)</p>
+                  <p class="text-white/58 text-[0.9375rem] leading-relaxed mb-3">Héberge notre base de données en temps réel et notre système d'authentification anonyme. Google peut collecter des données de diagnostic et de performance.</p>
+                  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Politique de confidentialité →</a>
+                </div>
+                <div class="rounded-xl border border-white/8 p-5 bg-surface">
+                  <p class="font-semibold text-white/90 mb-2">Agora.io</p>
+                  <p class="text-white/58 text-[0.9375rem] leading-relaxed mb-3">Transmet les flux vidéo et audio en temps réel. Les flux ne sont <strong class="text-white/80">pas enregistrés</strong> par She Want Me. Agora peut collecter des métadonnées techniques pour assurer la qualité du service.</p>
+                  <a href="https://www.agora.io/en/privacy-policy/" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Politique de confidentialité →</a>
+                </div>
+                <div class="rounded-xl border border-white/8 p-5 bg-surface">
+                  <p class="font-semibold text-white/90 mb-2">Cloudinary</p>
+                  <p class="text-white/58 text-[0.9375rem] leading-relaxed mb-3">Héberge vos photos de profil. Les photos sont associées à votre UID anonyme, non à votre identité réelle.</p>
+                  <a href="https://cloudinary.com/privacy" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Politique de confidentialité →</a>
+                </div>
+                <div class="rounded-xl border border-white/8 p-5 bg-surface">
+                  <p class="font-semibold text-white/90 mb-2">RevenueCat</p>
+                  <p class="text-white/58 text-[0.9375rem] leading-relaxed mb-3">Gère vos abonnements Premium. Votre UID anonyme est transmis pour lier l'abonnement à votre session. Les données de paiement sont exclusivement traitées par l'App Store ou le Google Play Store. She Want Me n'y a jamais accès.</p>
+                  <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Politique de confidentialité →</a>
+                </div>
+                <div class="rounded-xl border border-white/8 p-5 bg-surface">
+                  <p class="font-semibold text-white/90 mb-1">Google Sign-In / Apple Sign-In <span class="text-white/35 text-xs font-normal">(à venir, phase 2)</span></p>
+                  <p class="text-white/58 text-[0.9375rem] leading-relaxed mb-3">Si vous choisissez de lier votre compte via Google ou Apple, ces fournisseurs transmettent à Firebase votre email et votre nom de compte. Cette liaison reste toujours optionnelle.</p>
+                  <div class="flex gap-5">
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Politique Google →</a>
+                    <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Politique Apple →</a>
+                  </div>
+                </div>
+                <div class="rounded-xl border border-white/8 p-5 bg-surface">
+                  <p class="font-semibold text-white/90 mb-2">Apple App Store / Google Play Store</p>
+                  <p class="text-white/58 text-[0.9375rem] leading-relaxed mb-3">Traitent les paiements des abonnements Premium.</p>
+                  <div class="flex gap-5">
+                    <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Apple →</a>
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-accent text-sm font-medium hover:underline">Google →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 -->
+        <section id="section-3">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">03</span>
+            <h2 class="font-display text-2xl font-bold">Comment nous utilisons vos données</h2>
+          </div>
+          <div class="overflow-x-auto rounded-xl border border-white/8 mb-5">
+            <table class="policy-table">
+              <thead>
+                <tr>
+                  <th>Finalité</th>
+                  <th>Données utilisées</th>
+                  <th>Base légale</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Connexion anonyme</td><td>UID Firebase</td><td>Exécution du service</td></tr>
+                <tr><td>Affichage du profil pendant un match</td><td>Pseudo, genre, pays, bio, photo</td><td>Exécution du service</td></tr>
+                <tr><td>Mise en relation avec un utilisateur compatible</td><td>UID, genre, filtre de pays</td><td>Exécution du service</td></tr>
+                <tr><td>Établissement des appels vidéo</td><td>UID, canal Agora, données de session</td><td>Exécution du service</td></tr>
+                <tr><td>Compteur d'utilisateurs en ligne</td><td>Données de présence agrégées</td><td>Intérêt légitime</td></tr>
+                <tr><td>Gestion de l'abonnement Premium</td><td>UID, statut RevenueCat</td><td>Exécution du contrat</td></tr>
+                <tr><td>Hébergement de la photo de profil</td><td>Photo, UID</td><td>Consentement (action volontaire)</td></tr>
+                <tr><td>Limite d'abus (quota journalier)</td><td>Compteur local sur l'appareil</td><td>Intérêt légitime</td></tr>
+                <tr><td>Traitement des signalements</td><td>UID signalant, UID signalé, ID de session</td><td>Intérêt légitime (sécurité)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-surface px-5 py-4 text-[0.9375rem] text-white/68 leading-relaxed space-y-3">
+            <p class="font-semibold text-white/90 mb-3">Publicité et abonnement Premium</p>
+            <ul class="space-y-3 mb-4">
+              <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                <span>Les utilisateurs <strong class="text-white/88 font-medium">sans abonnement Premium</strong> peuvent voir des publicités diffusées par des réseaux tiers. Ces réseaux peuvent collecter des identifiants publicitaires (ex. : IDFA sur iOS, GAID sur Android) à des fins de ciblage contextuel, conformément à leurs propres politiques de confidentialité.</span>
+              </li>
+              <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+                <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+                <span>Les utilisateurs avec un <strong class="text-white/88 font-medium">abonnement Premium</strong> ne sont soumis à aucune publicité tierce ; leurs données ne sont pas partagées avec des réseaux publicitaires.</span>
+              </li>
+            </ul>
+            <p class="text-white/68 text-[0.9375rem]">Nous ne <strong class="text-white font-semibold">vendons jamais</strong> vos données personnelles à des tiers, quelle que soit votre formule.</p>
+            <p class="text-white/45 text-sm border-t border-white/6 pt-3 mt-3">En cas de connexion via Google ou Apple Sign-In (phase 2), l'email est utilisé uniquement pour identifier le compte et permettre la récupération de session, jamais à des fins marketing.</p>
+          </div>
+        </section>
+
+        <!-- 4 -->
+        <section id="section-4">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">04</span>
+            <h2 class="font-display text-2xl font-bold">Partage des données</h2>
+          </div>
+          <div class="prose-body">
+            <p>Nous ne partageons vos données qu'avec les prestataires techniques listés à la section 02, uniquement dans le cadre nécessaire au fonctionnement du service.</p>
+            <p>Nous pouvons également divulguer vos données si :</p>
+          </div>
+          <ul class="space-y-3 mt-2">
+            <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+              <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+              <span>La loi l'exige (réquisition judiciaire, demande d'autorité compétente).</span>
+            </li>
+            <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+              <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+              <span>Cela est nécessaire pour protéger les droits, la sécurité ou les biens de She Want Me ou de tiers.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 5 -->
+        <section id="section-5">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">05</span>
+            <h2 class="font-display text-2xl font-bold">Transferts internationaux de données</h2>
+          </div>
+          <div class="prose-body mb-6">
+            <p>Vos données sont hébergées et traitées sur des serveurs opérés par Google (Firebase), Agora.io et Cloudinary, qui peuvent être situés hors d'Afrique de l'Ouest (notamment aux États-Unis et en Europe).</p>
+            <p>Ces transferts sont encadrés par les lois sur la protection des données des pays UEMOA, et reposent sur votre consentement lors de l'utilisation des services.</p>
+          </div>
+          <div class="overflow-x-auto rounded-xl border border-white/8">
+            <table class="policy-table">
+              <thead>
+                <tr>
+                  <th>Pays</th>
+                  <th>Loi applicable</th>
+                  <th>Autorité de contrôle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Togo</strong> <span class="text-white/30 text-xs">(siège)</span></td><td>Loi n°2019-014 du 29 oct. 2019</td><td>ARDP</td></tr>
+                <tr><td>Sénégal</td><td>Loi n°2008-12 du 25 jan. 2008</td><td>CDP</td></tr>
+                <tr><td>Côte d'Ivoire</td><td>Loi n°2013-450 du 19 juin 2013</td><td>ARTCI</td></tr>
+                <tr><td>Bénin</td><td>Loi n°2009-09 du 22 mai 2009</td><td>APDP</td></tr>
+                <tr><td>Burkina Faso</td><td>Loi n°010-2004/AN</td><td>CIL</td></tr>
+                <tr><td>Mali</td><td>Loi n°2013-015</td><td>APDP</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 6 -->
+        <section id="section-6">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">06</span>
+            <h2 class="font-display text-2xl font-bold">Durée de conservation</h2>
+          </div>
+          <div class="overflow-x-auto rounded-xl border border-white/8">
+            <table class="policy-table">
+              <thead>
+                <tr>
+                  <th>Données</th>
+                  <th>Durée de conservation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Profil (pseudo, genre, pays, bio, photo)</td><td>Jusqu'à suppression du profil ou désinstallation</td></tr>
+                <tr><td>UID anonyme Firebase</td><td>Jusqu'à suppression de l'app / réinitialisation de l'appareil</td></tr>
+                <tr><td>Données de session (appels)</td><td>90 jours maximum</td></tr>
+                <tr><td>Présence (online/offline)</td><td>Supprimée automatiquement à la déconnexion</td></tr>
+                <tr><td>Signalements</td><td>12 mois</td></tr>
+                <tr><td>Données de paiement RevenueCat</td><td>Selon la politique de RevenueCat et des stores</td></tr>
+                <tr><td>Données locales (AsyncStorage)</td><td>Jusqu'à désinstallation de l'app</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 7 -->
+        <section id="section-7">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">07</span>
+            <h2 class="font-display text-2xl font-bold">Vos droits</h2>
+          </div>
+          <div class="prose-body mb-6">
+            <p>Conformément aux lois applicables sur la protection des données dans les pays UEMOA, vous disposez des droits suivants :</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            <div class="rounded-xl border border-white/8 bg-surface p-5">
+              <p class="font-semibold text-white/90 mb-2">Droit d'accès</p>
+              <p class="text-white/55 text-[0.9375rem] leading-relaxed">Obtenir une copie des données que nous détenons sur vous.</p>
+            </div>
+            <div class="rounded-xl border border-white/8 bg-surface p-5">
+              <p class="font-semibold text-white/90 mb-2">Droit de rectification</p>
+              <p class="text-white/55 text-[0.9375rem] leading-relaxed">Corriger des données inexactes via l'écran Profil de l'app.</p>
+            </div>
+            <div class="rounded-xl border border-white/8 bg-surface p-5">
+              <p class="font-semibold text-white/90 mb-2">Droit à l'effacement</p>
+              <p class="text-white/55 text-[0.9375rem] leading-relaxed">Demander la suppression de vos données.</p>
+            </div>
+            <div class="rounded-xl border border-white/8 bg-surface p-5">
+              <p class="font-semibold text-white/90 mb-2">Droit à la limitation</p>
+              <p class="text-white/55 text-[0.9375rem] leading-relaxed">Demander la restriction du traitement de vos données.</p>
+            </div>
+            <div class="rounded-xl border border-white/8 bg-surface p-5">
+              <p class="font-semibold text-white/90 mb-2">Droit à la portabilité</p>
+              <p class="text-white/55 text-[0.9375rem] leading-relaxed">Recevoir vos données dans un format structuré.</p>
+            </div>
+            <div class="rounded-xl border border-white/8 bg-surface p-5">
+              <p class="font-semibold text-white/90 mb-2">Droit d'opposition</p>
+              <p class="text-white/55 text-[0.9375rem] leading-relaxed">Vous opposer à certains traitements basés sur l'intérêt légitime.</p>
+            </div>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-surface p-5 text-[0.9375rem]">
+            <p class="font-semibold text-white/90 mb-2">Exercer vos droits</p>
+            <p class="text-white/60 leading-relaxed">Contactez-nous à <a href="mailto:privacy@she-want-me.app" class="text-accent hover:underline">privacy@she-want-me.app</a>. Nous nous engageons à répondre dans un délai de <strong class="text-white/80">30 jours</strong>.</p>
+            <p class="text-white/38 text-sm mt-3 leading-relaxed">Du fait de l'authentification anonyme, vous devrez fournir votre UID Firebase (accessible dans les paramètres de l'app) pour permettre votre identification.</p>
+          </div>
+        </section>
+
+        <!-- 8 -->
+        <section id="section-8">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">08</span>
+            <h2 class="font-display text-2xl font-bold">Sécurité des données</h2>
+          </div>
+          <div class="space-y-3 mb-5">
+            <div class="flex gap-4 rounded-xl border border-white/8 bg-surface p-5">
+              <span class="text-xl shrink-0 mt-0.5">🔒</span>
+              <div>
+                <p class="font-semibold text-white/90 mb-1">Chiffrement en transit</p>
+                <p class="text-white/55 text-[0.9375rem] leading-relaxed">Toutes les communications entre l'app et nos serveurs utilisent HTTPS/TLS.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 rounded-xl border border-white/8 bg-surface p-5">
+              <span class="text-xl shrink-0 mt-0.5">👤</span>
+              <div>
+                <p class="font-semibold text-white/90 mb-1">Authentification anonyme</p>
+                <p class="text-white/55 text-[0.9375rem] leading-relaxed">Aucune donnée d'identité réelle (email, téléphone) n'est collectée ni stockée.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 rounded-xl border border-white/8 bg-surface p-5">
+              <span class="text-xl shrink-0 mt-0.5">🎯</span>
+              <div>
+                <p class="font-semibold text-white/90 mb-1">Accès restreint</p>
+                <p class="text-white/55 text-[0.9375rem] leading-relaxed">Seul le responsable de traitement a accès à la base de données Firebase.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 rounded-xl border border-white/8 bg-surface p-5">
+              <span class="text-xl shrink-0 mt-0.5">🔗</span>
+              <div>
+                <p class="font-semibold text-white/90 mb-1">Isolation des sessions</p>
+                <p class="text-white/55 text-[0.9375rem] leading-relaxed">Les données d'un appel ne sont accessibles qu'aux deux participants concernés.</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-white/40 text-[0.9375rem] leading-relaxed">Aucun système n'est infaillible. En cas d'incident de sécurité affectant vos données, nous nous engageons à vous en informer dans les délais prévus par la loi applicable.</p>
+        </section>
+
+        <!-- 9 -->
+        <section id="section-9">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">09</span>
+            <h2 class="font-display text-2xl font-bold">Enfants et mineurs</h2>
+          </div>
+          <div class="prose-body">
+            <p>She Want Me est une application <strong>réservée aux personnes âgées de 18 ans et plus</strong>. Un écran de confirmation d'âge est présenté à chaque nouvel utilisateur.</p>
+            <p>Nous ne collectons pas sciemment de données personnelles de personnes mineures. Si vous avez connaissance qu'un mineur utilise l'application, contactez-nous à <a href="mailto:sessoujeandedieu@gmail.com" class="text-accent hover:underline">sessoujeandedieu@gmail.com</a> afin que nous prenions les mesures nécessaires.</p>
+          </div>
+        </section>
+
+        <!-- 10 -->
+        <section id="section-10">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">10</span>
+            <h2 class="font-display text-2xl font-bold">Cookies et suivi</h2>
+          </div>
+          <div class="prose-body mb-4">
+            <p>She Want Me est une <strong>application mobile native</strong> : elle n'utilise pas de cookies au sens traditionnel du terme.</p>
+            <p>Des technologies similaires de stockage local (AsyncStorage) sont utilisées uniquement pour :</p>
+          </div>
+          <ul class="space-y-3 mb-4">
+            <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+              <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+              <span>Mémoriser votre confirmation d'âge</span>
+            </li>
+            <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+              <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+              <span>Mémoriser que votre profil est complété</span>
+            </li>
+            <li class="flex gap-3 text-white/68 text-[0.9375rem] leading-relaxed">
+              <span class="w-1.5 h-1.5 rounded-full bg-white/25 shrink-0 mt-2.5"></span>
+              <span>Gérer votre quota journalier de recherches</span>
+            </li>
+          </ul>
+          <p class="text-white/55 text-[0.9375rem] leading-relaxed">Ces données restent sur votre appareil et ne sont pas transmises à des tiers.</p>
+        </section>
+
+        <!-- 11 -->
+        <section id="section-11">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">11</span>
+            <h2 class="font-display text-2xl font-bold">Modifications de cette politique</h2>
+          </div>
+          <div class="prose-body mb-4">
+            <p>En cas de modification importante de cette politique, nous vous en informerons par une notification dans l'application ou par une mise à jour visible lors du prochain lancement.</p>
+            <p>La date de "Dernière mise à jour" en haut de ce document indique la version en vigueur. La version précédente reste consultable sur demande.</p>
+          </div>
+        </section>
+
+        <!-- 12 -->
+        <section id="section-12">
+          <div class="flex items-baseline gap-4 mb-6 pb-4 border-b border-white/6">
+            <span class="section-number">12</span>
+            <h2 class="font-display text-2xl font-bold">Nous contacter</h2>
+          </div>
+          <div class="prose-body mb-5">
+            <p>Pour toute question relative à cette politique ou pour exercer vos droits :</p>
+          </div>
+          <div class="rounded-2xl border border-white/8 bg-surface p-6">
+            <div class="space-y-3 text-[0.9375rem]">
+              <div class="flex gap-4 py-2 border-b border-white/5">
+                <span class="text-white/35 w-28 shrink-0">Email</span>
+                <a href="mailto:sessoujeandedieu@gmail.com" class="text-accent hover:underline">sessoujeandedieu@gmail.com</a>
+              </div>
+              <div class="flex gap-4 py-2 border-b border-white/5">
+                <span class="text-white/35 w-28 shrink-0">Responsable</span>
+                <span class="text-white/72">Jean de Dieu SESSOU</span>
+              </div>
+              <div class="flex gap-4 py-2">
+                <span class="text-white/35 w-28 shrink-0">Adresse</span>
+                <span class="text-white/72">17 rue Kouenou, Lomé, Togo</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8 text-center text-white/30 text-sm mt-8">
+    <div class="flex items-center justify-center gap-1.5 mb-2 font-display">
+      <span class="font-bold text-white/50">she</span>
+      <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+      <span class="font-bold text-white/50">want me</span>
+    </div>
+    <p>Fait pour la diaspora africaine 🌍</p>
+    <p class="mt-2"><a href="/" class="hover:text-white/60 transition">← Retour à l'accueil</a></p>
+  </footer>
+
+</body>
+</html>
